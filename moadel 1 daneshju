@@ -1,0 +1,30 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+float avg(float [],int [],int );
+main(){
+	int tedad,majmuvahed;
+	float average;
+	cout<<"tedad dars ra vared konid:";
+	cin>>tedad;
+	float nomre[tedad];
+	int vahed[tedad];
+	for(int i=0;i<tedad;i++){
+		cout<<"nomre:";
+		cin>>nomre[i];
+	}
+	for(int i=0;i<tedad;i++){
+		cout<<"vahed:";
+		cin>>vahed[i];
+		majmuvahed+=vahed[i];
+	}
+	average=avg(nomre,vahed,tedad)/majmuvahed;
+	cout<<"avg="<<average;
+}
+float avg(float NOMRE[],int VAHED[],int TEDAD){
+	float SUM=0;
+	for(int i=0;i<TEDAD;i++){
+		SUM+=NOMRE[i]*VAHED[i];
+	}
+	return SUM;	
+}
