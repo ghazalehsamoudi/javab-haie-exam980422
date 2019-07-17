@@ -1,0 +1,17 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main(){
+     int a,n=0,sum=0;
+     cout<<"enter a number:";
+     cin>>a;
+     for(int i=1;i<=a;i++){
+     	if(a%i==0){
+     		++n;
+     		cout<<i<<'\t';
+     		sum+=i;
+		 }
+	 }
+	 cout<<'\n'<<"sum:"<<sum<<'\n'<<"tedad:"<<n;
+	 
+}
