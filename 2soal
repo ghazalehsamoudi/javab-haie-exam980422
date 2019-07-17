@@ -1,0 +1,43 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int bishtarin(float [],int);
+int maxim(int ,int ,int );
+main(){
+	int tedad,n;	
+	cout<<"tedad ra vared konid";
+	cin>>tedad;
+	float a[tedad];
+	int m[tedad];
+	for(int i=0;i<tedad;i++){
+		cout<<"entera a[i]:";
+		cin>>a[i];
+	}
+	n=bishtarin(a,tedad);
+}
+int bishtarin(float A[],int tedad){
+	int bish[tedad];
+	int i,j;
+	for(int i=0;i<tedad;i++){
+		for(int j=i+1;j<tedad;j++){
+			if(A[i]==A[j])
+		      ++bish[i];
+		}		
+	}
+	return bish;
+}
+int maxim(int bish[],int tedad){
+	    int max=bish[0];
+	    for(int i=1;i<tedad;i++){
+	   	    if(bish[i]>max)
+	   	         max=bish[i];
+	   }
+	
+}
+
+
+
+
+
+
+
