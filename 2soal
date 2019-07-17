@@ -32,7 +32,7 @@ int maxim(int bish[],int tedad){
 	   	    if(bish[i]>max)
 	   	         max=bish[i];
 	   }
-	
+	//aia mishe iek araie ra return kard?
 }
 
 
